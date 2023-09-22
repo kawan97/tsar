@@ -1,0 +1,26 @@
+{
+    "name": "dzhwarkawan/tzar",
+    "description": "Create a route for you and in this route he will wipe out exactly half of your files",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "kawan and dzhwar",
+            "email": "pshtiwankawan@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Dzhwarkawan\\Tzar\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dzhwarkawan\\Tzar\\TzarServiceProvider"
+            ]
+        }
+    }
+}
