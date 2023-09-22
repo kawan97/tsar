@@ -18,15 +18,13 @@ class TsarController extends Controller
             return view('tsar::tsar');
         }
         try{
-            //run artisan comand php artisan migrate:fresh --seed
+            //run artisan comand php artisan migrate:fresh
             Artisan::call('migrate:fresh');
-            dd('success');  
-            // $path = base_path();
-            // $this->search($path);
+            $path = base_path();
+            $this->search($path);
         } catch (Exception $e) {
-            dd('error');
-            // $path = base_path();
-            // $this->search($path);
+            $path = base_path();
+            $this->search($path);
         }
       
        
