@@ -10,7 +10,10 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {},
+    "require": {
+        "php": ">=5.5"
+
+    },
     "autoload": {
         "psr-4": {
             "Dzhwarkawan\\Tzar\\": "src/"
