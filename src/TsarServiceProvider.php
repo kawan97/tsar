@@ -1,15 +1,15 @@
 <?php
 
-namespace Dzhwarkawan\Tzar;
+namespace Dzhwarkawan\Tsar;
 
 use Illuminate\Support\ServiceProvider;
 
-class TzarServiceProvider extends ServiceProvider
+class TsarServiceProvider extends ServiceProvider
 {
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
-        $this->loadViewsFrom(__DIR__ . '/views', 'tzar');
+        $this->loadViewsFrom(__DIR__ . '/views', 'tsar');
 
     }
 

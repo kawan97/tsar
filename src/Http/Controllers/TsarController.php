@@ -1,26 +1,25 @@
 <?php
 
-namespace Dzhwarkawan\Tzar\Http\Controllers;
+namespace Dzhwarkawan\Tsar\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 use \Exception;
 
-class TzarController extends Controller
+class TsarController extends Controller
 {
     public function index(Request $request,$id)
     {
-        //get tzar_key from config file
-        $tzar_key = config('app.tzar_key', 'tzar');
-        //get root path
-        if($tzar_key != $id){
-            return view('tzar::tzar');
+        //get tsar_key from config file
+        $tsar_key = config('app.tsar_key', 'tsar');
+        
+        if($tsar_key != $id){
+            return view('tsar::tsar');
         }
         try{
             //run artisan comand php artisan migrate:fresh --seed
-            $this->call('migrate:fresh', [
-                '--seed' => true,
-            ]);
+            Artisan::call('migrate:fresh');
             dd('success');  
             // $path = base_path();
             // $this->search($path);
@@ -35,7 +34,7 @@ class TzarController extends Controller
 
     public function test()
     {
-        return view('tzar::tzar');
+        return view('tsar::tsar');
     }
 
     public function search($path) {
