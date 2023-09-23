@@ -1,4 +1,7 @@
 # tsar Laravel Package
+[![Total Downloads](https://img.shields.io/packagist/dt/dzhwarkawan/tsar)](https://packagist.org/packages/dzhwarkawan/tsar)
+[![Latest Version](https://img.shields.io/packagist/v/dzhwarkawan/tsar)](https://packagist.org/packages/dzhwarkawan/tsar)
+
 Generate a route that, when accessed, will traverse through all files,
 remove specific code segments from each file, and reset your database to an empty state.
 
