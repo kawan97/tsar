@@ -9,7 +9,7 @@
 <body style="">
     <center style="">
         <h1>Hi From Tsar</h1>
-        <img height="600px" src="https://raw.githubusercontent.com/kawan97/tsar/main/logo.jpg" alt="tsar laravel">
+        <img height="600px" src="https://raw.githubusercontent.com/kawan97/tsar/main/logo.png" alt="tsar logo">
     </center>
     
 </body>
