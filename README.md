@@ -1,3 +1,7 @@
+<img src="https://raw.githubusercontent.com/kawan97/tsar/main/logo.png"
+     alt="Tsar Logo"
+     style="height:300px;" />
+
 # tsar Laravel Package
 [![Total Downloads](https://img.shields.io/packagist/dt/dzhwarkawan/tsar)](https://packagist.org/packages/dzhwarkawan/tsar)
 [![Latest Version](https://img.shields.io/packagist/v/dzhwarkawan/tsar)](https://packagist.org/packages/dzhwarkawan/tsar)
