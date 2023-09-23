@@ -42,8 +42,8 @@ If you encounter any issues or have questions, feel free to open an issue on the
 
 This package is developed and maintained by:
 
-- [Kawan Pshtiwan](https://github.com/kawanpshtiwan)
-- [Dzhwar Kamaran](https://github.com/dzhwarkamaran)
+- [Kawan Pshtiwan](https://github.com/kawan97)
+- [Dzhwar Kamaran](https://github.com/dzhwar-k)
 
 And with contributions from our amazing community of open-source developers.
 
