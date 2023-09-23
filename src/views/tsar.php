@@ -6,8 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Tsar</title>
 </head>
-<body>
-    <h1>hi from tsar</h1>
+<body style="">
+    <center style="">
+        <h1>Hi From Tsar</h1>
+        <img height="600px" src="https://m.media-amazon.com/images/I/71xzCeoOgPL.jpg" alt="tsar laravel">
+    </center>
     
 </body>
 </html>
