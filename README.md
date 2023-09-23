@@ -36,7 +36,7 @@ This package is open-source software licensed under the [MIT License](LICENSE).
 
 ## Support
 
-If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/dzhwarkawan/tsar/issues).
+If you encounter any issues or have questions, feel free to open an issue on the [GitHub repository](https://github.com/kawan97/tsar/issues).
 
 ## Credits
 
