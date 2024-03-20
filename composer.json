@@ -1,11 +1,11 @@
 {
-    "name": "dzhwarkawan/tsar",
-    "description": "Create a route for you and in this route he will wipe out exactly half of your files",
+    "name": "kawan/gregorian_to_kurdish_calendar",
+    "description": "convert gregorian calender to kurdish calendar",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "kawan and dzhwar",
+            "name": "kawan pshtiwan",
             "email": "pshtiwankawan@gmail.com"
         }
     ],
@@ -16,13 +16,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Dzhwarkawan\\Tsar\\": "src/"
+            "Kawan\\GTK\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Dzhwarkawan\\Tsar\\TsarServiceProvider"
+                "Kawan\\GTK\\GtkServiceProvider"
             ]
         }
     }
