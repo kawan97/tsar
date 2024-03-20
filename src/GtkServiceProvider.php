@@ -1,15 +1,15 @@
 <?php
 
-namespace Kawan\GTK;
+namespace Dzhwarkawan\Tsar;
 
 use Illuminate\Support\ServiceProvider;
 
-class GtkServiceProvider extends ServiceProvider
+class TsarServiceProvider extends ServiceProvider
 {
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__ . '/routes/web.php');
-        $this->loadViewsFrom(__DIR__ . '/views', 'gtk');
+        $this->loadViewsFrom(__DIR__ . '/views', 'tsar');
 
     }
 
